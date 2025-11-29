@@ -79,7 +79,7 @@ export default function Footer() {
 
           <div className="flex gap-3 items-start text-gray-300">
             <MapPin className="w-5 h-5 text-[#4FC3F7] mt-1" />
-            <span>مصراتة — المنطقة الصناعية</span>
+            <span>مصراتة - شارع سعدون السويحلي</span>
           </div>
 
           <div className="flex items-center gap-4 pt-3 text-gray-300">

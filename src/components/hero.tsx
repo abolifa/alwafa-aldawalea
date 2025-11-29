@@ -64,14 +64,9 @@ const Hero = () => {
         </motion.h1>
 
         {/* Sub Description */}
-        <motion.p
-          className="mt-6 text-gray-300 text-lg md:text-xl max-w-2xl leading-relaxed"
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25, duration: 0.8 }}
-        >
-          لاستيراد الآلات والمعدات الثقيلة ومستلزماتها وقطع الغيار وتجهيزات
-          المصانع والورش ومستلزماتها
+        <motion.p className="mt-6 text-gray-300 text-lg md:text-2xl max-w-3xl leading-loose">
+          متخصصون في استيراد قطع غيار الشاحنات والمعدات الصناعية الأصلية —
+          فلاتر، محركات، نظام تعليق، تبريد، كهرباء، نقل قدرة وقطع OEM معتمدة.
         </motion.p>
 
         <a

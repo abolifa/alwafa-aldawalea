@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Send } from "lucide-react";
 import { useState } from "react";
+import { FaMobileAlt } from "react-icons/fa";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
@@ -60,7 +61,7 @@ export default function Contact() {
         </div>
       </motion.div>
 
-      <div className="container mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-start z-10 relative">
+      <div className="container mx-auto max-w-7xl px-6 grid md:grid-cols-2 gap-10 items-stretch z-10 relative">
         <motion.div
           initial={{ opacity: 0, x: 60 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -78,13 +79,23 @@ export default function Contact() {
             </li>
 
             <li className="flex gap-3 items-start">
-              <Phone className="w-6 h-6 text-blue-500" />
+              <FaMobileAlt className="w-6 h-6 text-blue-500" />
               <a
                 href="tel:+218919407227"
                 className="font-bold underline"
                 dir="ltr"
               >
                 +218 91 940 7227
+              </a>
+            </li>
+            <li className="flex gap-3 items-start">
+              <Phone className="w-6 h-6 text-blue-500" />
+              <a
+                href="tel:+218912545566"
+                className="font-bold underline"
+                dir="ltr"
+              >
+                +218 91 254 5566
               </a>
             </li>
 
@@ -96,6 +107,16 @@ export default function Contact() {
                 dir="ltr"
               >
                 info@alwafaaldawalea.com.ly
+              </a>
+            </li>
+            <li className="flex gap-3 items-start">
+              <Mail className="w-6 h-6 text-blue-500" />
+              <a
+                href="mailto:alwafa.aldawliya@gmail.com"
+                className="font-bold underline"
+                dir="ltr"
+              >
+                alwafa.aldawliya@gmail.com
               </a>
             </li>
           </ul>
@@ -137,7 +158,7 @@ export default function Contact() {
           <textarea
             name="message"
             required
-            rows={4}
+            rows={7}
             placeholder="أكتب رسالتك بالتفصيل"
             className="w-full border border-gray-300 rounded-xl p-4 text-lg resize-none focus:border-[#0078ff] outline-none"
           />
